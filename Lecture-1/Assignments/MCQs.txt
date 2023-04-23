@@ -1,0 +1,23 @@
+3. What is the initial packet size of HTTP ?
+a) 64kb
+b) 12kb
+c) 14kb
+d) 128kb
+
+Answer:c) 14kb
+
+4. How can we improving loading speed of a webpage(HTML_HTTP_PageLoad)
+a) Reducing size of critical html ,css and js
+b) Using preload scanner
+c) Deferring non-critical assets
+d) All of the above
+
+Answer:c) Deferring non-critical assets
+
+5. Which of the following is non-blocking(HTML_HTTP_non_blocking)
+a) DOM tree construction
+b) CSSOM construction 
+c) JS execution
+d) HTML parsing 
+
+Answer:d) HTML parsing 

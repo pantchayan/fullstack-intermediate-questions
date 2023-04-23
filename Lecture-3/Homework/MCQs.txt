@@ -1,0 +1,18 @@
+Q4 : Which statement is true for inline-block elements?
+a) They work as a hybrid of block and inline elements 
+b) You can assign them height and width property values 
+c) They don't take up the entire horizontal space of the screen.
+d) All the above 
+Ans: d) All the above 
+
+Q5 - Which of the following statements are true:
+I => inline-block elements take space of an entire row or width.
+II => inline elements can have padding and margins added horizontally
+a) I 
+b) II 
+c) both 
+d) none 
+Ans: b) II
+
+
+

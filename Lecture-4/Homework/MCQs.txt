@@ -1,0 +1,9 @@
+Q-5 Which element is used as reference to position when we use  "position: fixed" css rule?
+ 
+a) closest direct/indirect parent with position: relative
+b) wrapper element
+c) direct parent element
+d) viewport
+  
+Ans : 
+d) viewport

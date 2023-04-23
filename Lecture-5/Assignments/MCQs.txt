@@ -1,0 +1,18 @@
+Q3 What are the advantages of using this code in a html page ?
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+a) It helps in better seo.
+b) It tells webpage to use whole viewport of the screen
+c) width=device-width is used to override defaults in mobile screens.
+d) b & c
+Ans : 
+d) b & c
+
+Q5 Which of the following is NOT a technique for improving keyboard accessibility ? 
+a) Using tabindex to control focus order
+b) Using skip links to bypass repetitive content
+c) Using display:none to hide content from keyboard users
+d) Using semantic HTML elements 
+Ans : 
+d) Using semantic HTML elements 

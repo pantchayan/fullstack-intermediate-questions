@@ -1,0 +1,24 @@
+Q2 : Which of the following refers to browser default styling ?
+a) Browser agent stylesheet
+b) User agent stylesheet
+c) Author agent stylesheet
+d) All of the above
+Ans : 
+b) User agent stylesheet
+
+Q3 : Which of the following is default value of overflow
+a) hidden 
+b) visible
+c) scroll
+d) auto
+Ans : b) visible
+
+Q4 : What will be the actual width of the element when we set box sizing to border-box and width is user defined?
+
+a) actual width=  user defined width +padding+border
+b) actual width =user defined width + padding +border+outline
+c) actual width =user defined width -padding -border
+d) Actual width = user defined width -padding-border-outline
+Ans : c) actual width =user defined width -padding -border
+
+

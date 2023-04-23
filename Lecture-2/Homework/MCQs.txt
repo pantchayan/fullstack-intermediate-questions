@@ -1,0 +1,42 @@
+Q3 - what are the final padding values for the above div?
+
+div{
+    padding: 20px;
+    padding-top: 60px;
+    padding-right: 40px;
+    padding: 30px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+}
+
+a) top - 20; right - 20; bottom - 20; left - 20;
+b) top - 20; right - 20; bottom - 50; left - 70;
+c) top - 60; right - 40; bottom - 50; left - 70;
+d) none of them 
+Ans : 
+d) none of them 
+
+
+Q4  - What is the total space between the content boxes of m1 and m2:
+
+<div class="m1></div>
+<div class="m2></div>
+
+<style>
+    .m1{
+        padding: 10px;
+    }
+
+    .m2{
+        margin: 20px;
+        padding: 30px;
+    }
+</style>
+
+a) 60px
+b) 20px
+c) 50px
+d) none of them
+Ans : 
+a) 60px
+

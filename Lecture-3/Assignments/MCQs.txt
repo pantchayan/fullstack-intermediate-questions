@@ -1,0 +1,15 @@
+Q4 Which of these units are relative ?
+a) vh
+b) rem
+c) %
+d) All of the above
+Ans : 
+d) All of the above
+
+Q5. What is the correct order of specificity ? 
+a)!important > id > class>user agent stylesheet> element
+b)!important > id > class> element>user agent stylesheet
+c)id>!important>class>element > user agent stylesheet
+d)!important>class>id> element>user agent stylesheet
+Ans : 
+c)id>!important>class>element > user agent stylesheet
