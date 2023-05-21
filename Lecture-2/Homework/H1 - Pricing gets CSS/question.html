@@ -1,0 +1,132 @@
+<!-- Problem Description:
+Write internal CSS to add the below mentioned styles to the pricing card.
+
+For the div.card:
+1. Set the width as 250px
+2. Apply a border of solid style, 2px width, abd lightgray color.
+3. Add padding of 25px on top, 10px on left, 50px on bottom, and 10px on right.
+4. Set line-height to 30px
+5. Add a box-shadow of '0 10px 22px 10px rgba(27, 38, 49, 0.1)'
+
+For the h3:
+1. Set the text-align to center
+2. Add a padding of 20px at bottom
+
+Now, in the h4 tag there is a <span> that contains the text '/month'
+
+For the entire h4:
+1. Set text-align as 'center'
+2. Add padding-bottom of 10px
+
+For the content in h4 apart from <span>, i.e., '$399':
+1. Set color to '#f63854' 
+2. Set the font-size to '40px'
+3. Set the font-weight to 500
+
+For the content in h4 inside of <span>, i.e., '/month':
+1. Set color to 'gray'
+2. Set the font-size to 15px
+
+You have been provided with some HTML and CSS as preset boilerplate. 
+Don't make any changes to them.
+
+
+-->
+
+<!-- Hints:
+1. Pay attention and follow every instruction in the problem description and test cases. 
+2. Use '.card h4' as a selector to select the entire h4, 
+   and under this selector apply the styles required for content in h4 apart from <span>, i.e., '$399'
+3. Use '.card h4 span' as a selector to select the span inside of h4,
+   and under this selector, apply the respective styles required.
+-->
+
+<!-- Test Cases:
+1. Verify that for the div.card the width is 250px and line-height is 30px
+2. Verify that the div.card has a padding of 25px on top, 10px on left, 50px on bottom, and 10px on right.
+3. Verify that the div.card has a border of '2px solid lightgray' value
+4. Verify that the h3 and h4 have text-align set to 'center'
+5. Verify that the text '$399' in h4 has color of '#f63854', font-size of '40px' and font-weight of 500
+6. Verify that the text '/month' in h4 span has a color of 'gray' and font-size of '15px'   -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+
+    <style>
+        /*Presets  */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Lato", sans-serif;
+            list-style: none;
+        }
+
+        body {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: gray;
+        }
+
+        /* Write CSS from here ============================== */
+
+        .card {
+            width: 250px;
+            border: 2px solid lightgray;
+            padding: 25px 10px 50px 10px;
+            line-height: 30px;
+            box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+        }
+
+        .card h3 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .card h4 {
+            text-align: center;
+            color: #f63854;
+            font-size: 40px;
+            font-weight: 500;
+            padding-bottom: 10px;
+        }
+
+        .card h4 span {
+            color: gray;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="card">
+            <h3>PREMIUM</h3>
+            <h4>$399<span>/month</span></h4>
+            <p>That's only 13.30$ per meal</p>
+            <hr>
+            <div>
+                <ul>
+                    <li>1 meal every day</li>
+                    <li>Order 24/7</li>
+                    <li>Access to newest creations</li>
+                    <li>Free delivery</li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+
+    </section>
+</body>
+
+</html>

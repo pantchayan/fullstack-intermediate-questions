@@ -1,0 +1,108 @@
+<!-- Problem Description:
+Write internal CSS to add the below mentioned styles to the feature card.
+
+For div.container-parent:
+1. Set the display as flex.
+2. Set the width as '100%'
+3. Using some flex properties, align items in 'center' on vertical and horizontal axis 
+
+For div.container:
+1. Set margin from bottom as 30px and from right as 15px.
+2. Set the value of box-shadow property as: '0 10px 22px 10px rgba(27, 38, 49, 0.1)'
+3. Set width as 15%
+4. add padding of 20px from every side.
+
+For the heading h3:
+1. Set the text-align as 'center'
+-->
+
+<!-- Hints:
+1. Pay attention to the instructions in the description and test-cases.
+2. To align items in center on vertical and horizontal axis, utilise justify-content and align-items properties. -->
+
+<!-- Test cases:
+1. Verify that for div.container-parent the display is set to flex.
+2. Verify that the items in div.container-parent are aligned in center using justify-content and align-items properties. 
+3. Verify that for div.container the margin from bottom is 30px and from right is 15px.
+4. Verify that the div.container has a padding of 20px from every side.
+5. Verify that the box-shadow property for div.container is set to '0 10px 22px 10px rgba(27, 38, 49, 0.1)'
+6. Verify that the text-align property for h3 is set to 'center'. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" crossorigin> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .icon {
+            text-align: center;
+            margin-left: 45%;
+            color: #f63854;
+            font-size: 300%;
+            /* padding-left: 5rem; */
+            margin-bottom: 0.9rem;
+        }
+
+        .container-parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .container {
+            margin-bottom: 30px;
+            padding: 20px;
+            margin-right: 15px;
+            box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+            width: 15%;
+            transition: transform 0.4s;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        .heading-para {
+            font-size: 130%;
+            padding: 8rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-weight: 300;
+            font-size: 125%;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        .feature-para {
+            line-height: 145%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="features">
+        <div class="container-parent">
+            <div class="container">
+                <img class="icon" src="calendar-logo.PNG" alt="calendar-logo">
+                <h3>365 DAYS/YEAR</h3>
+                <p class="feature-para">
+                    Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage.
+                    You can also choose to order more flexibly if that's your style.
+                </p>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

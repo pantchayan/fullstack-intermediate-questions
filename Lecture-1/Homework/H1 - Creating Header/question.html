@@ -1,0 +1,69 @@
+<!-- Problem Description:
+Create a simple Nav bar and Header section with just using plain HTML.
+
+For the nav bar:
+1. Use <a> tags to add the redirectable links.
+
+For the header section:
+Use <header> tag, inside of which:
+1. Use <img> tag to add a Banner image.
+    1.1. Set the src as 'food.jpg'
+    1.2. Set the alt as 'food-img'
+    1.3. Set the height attribute as '200px'
+2. Use Heading tags to add the titles.
+    2.1. Use <h1> tag for 'MEAL PLANS.'
+    2.2. Use <h2> tag for 'FOR DEVELOPERS.'
+3. Use the Button tags to add 2 buttons for:
+    3.1. Book Now
+    3.2. Show me more
+
+Further, refer to the test cases to understand necessary requirements to submit the problem.
+Below is the basic structure of the expected output:
+-->
+
+<!-- Test Cases:
+Verify that the webpage has a <header> section.
+Verify that the webpage has atleast one <a> tag making up the nav-bar.
+Verify that the webpage has an image using the <img> tag with 'src' and 'alt' attributes
+Verify that the webpage has <h1> and <h2> tags respectively.
+Verify that the webpage has a <button> tag. -->
+
+<!-- Solution Approach:
+Start by creating the basic structure of the HTML document using the <html>, <head>, and <body> tags.
+Add a <header> section that will contain the Nav bar, Banner Image, Headings and Buttons.
+Inside <header> section add two <div> tags, one for Nav bar and other for remaining landing page components.
+Use 5 <a> tags in Nav bar <div> to specify 5 redirectable options.
+Add Banner image in second <div> using <img> tag with proper ‘src’ and ‘alt’ attributes.
+Use <h1>, <h2> tags to specify headings respectively.
+Finally, use 2 <button> tags to add 2 buttons. -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Header</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href=”#”>Features</a>
+            <a href=”#”>Details</a>
+            <a href=”#”>Reviews</a>
+            <a href=”#”>Plans</a>
+            <a href=”#”>Sign Up</a>
+        </div>
+        <div>
+            <img src='food.jpg' alt='food-img' height="200px">
+            <h1>MEAL PLANS.</h1>
+            <h2>FOR DEVELOPERS.</h2>
+
+            <button>Book Now</button>
+            <button>Show me more</button>
+        </div>
+    </header>
+</body>
+</div>
+
+</html>

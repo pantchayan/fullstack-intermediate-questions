@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Write CSS here ===================== */
+
+.btn {
+  display: inline-block;
+  color: white;
+  margin-right: 15px;
+  padding: 15px 25px;
+  background-color: #f63854;
+  border-radius: 64px;
+  border: 1px solid #f63854;
+  transition: transform 0.3s, color 0.3s, background-color 0.3s;
+}
+
+.btn-empty {
+  color: #f63854;
+  background-color: transparent;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.btn-empty:hover {
+  color: white;
+  background-color: #f63854;
+}

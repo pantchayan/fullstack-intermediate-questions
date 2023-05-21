@@ -1,0 +1,59 @@
+<!-- Problem Description:
+Write internal CSS to select the elements that contain "Select me" as innerText
+and set the color as 'blue'.
+
+Note that you are not allowed to write any inline css for the task.
+
+Further, refer to the test cases to understand necessary requirements to submit the problem.
+
+-->
+
+<!-- Hints:
+1. Use #the-one as selector for the div that contains the target p and div elements.
+2. Use Parent > Child, format to get the immediate ancestors for the parent div#the-one.
+3. Use p.c1 to select the target p tag inside the div#the-one -->
+
+<!-- Test cases:
+1. Verify that the style is not applied using inline css
+2. Verify that the <p> tag with 'Select me' is 'blue'
+3. Verify that the <div> tag with 'Select me' is 'blue' -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style> 
+    /* Write CSS here ============================*/
+        #the-one > p.c1{
+            color: blue;
+        }
+
+        #the-one > div.c1{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Select the element with "Select me" and make it blue  -->
+    <div class="some-class">
+        <div id="the-one">
+            <p>Random</p>
+            <div>
+                <p class="c1 c2">Random</p>
+            </div>
+            <p class="c1 c2">Select me</p>
+            <div class="c1 c2">Select me</div>
+        </div>
+    </div>
+    <div class="some-class">
+        <p class="c1">Random</p>
+        <p class="c2">Random</p>
+        <p class="c1 c2">Random</p>
+    </div>
+</body>
+
+</html>

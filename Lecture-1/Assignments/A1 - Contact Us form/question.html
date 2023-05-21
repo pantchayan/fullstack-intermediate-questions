@@ -1,0 +1,93 @@
+<!-- Problem Description
+Create the ‘Contact Us’ Form for a website which should include the following:
+
+1. Name input (an input of text type and 'name' as id)
+
+2. Email input (an input of email type and 'email' as id)
+
+3. A drop down input (utilising select tag with 'find' as id)
+    3.1. Label is 'How did you find us?' with options as 'friends', 'search', 'ads', and 'others'
+
+4. Message input (a textarea with 'message' as id)
+
+5. A check box for terms and conditions (input of 'checkbox' type)
+    5.1. Followed by a span consisting 'I have read and agree with all the Privacy Policy and Terms Conditions'
+
+6. and a submit button (an input of submit type)
+
+Further, refer to the test cases to understand necessary requirements to submit the problem.
+
+Below is the basic structure of the expected output:
+
+-->
+
+<!-- Hints:
+
+1. Follow the instructions in the problem description and also look through the test cases.
+2. Have a heading as <h2>CONTACT US<h2> 
+3. Use <form> tag to contain all the input fields and drop down menu.
+4. Set relevant type attribute for each input field and also mention the ids as per instructions.
+
+-->
+
+<!-- Test cases:
+Verify that the webpage has a proper structure using the <html>, <head>, and <body> tags.
+Verify that the webpage has a <h2> tag that contains the heading 'CONTACT US'.
+Verify that the webpage has <form> tag with 4 <input> tags, 1 <select> tag and 1 <textarea> tags.
+Verify that the webpage has ids of 'name', 'email', 'find', and 'message'.
+-->
+
+
+<!-- Complete Solution -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>CONTACT US</h2>
+    <div class="container__parent">
+        <form>
+            <label>Name</label>
+            <br>
+            <input type="text" id="name" name="Name" placeholder="Your Name" required>
+            <br>
+            <label>Email</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Your Email">
+            <br>
+            <label>How did you find us</label>
+            <br>
+            <select name="" id="find">
+                <option value="">
+                    friends
+                </option>
+                <option value="">search</option>
+                <option value="">advertsiment</option>
+                <option value="">other</option>
+            </select>
+            <br>
+
+            <label>Drop us a line</label>
+            <br>
+            <textarea name="" id="message" placeholder="Your Message"></textarea>
+            <br>
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-conditions">I have read and agree with all the Privacy Policy and
+                Terms Conditions</span>
+            <br>
+            <input type="submit" value="Submit">
+            <br>
+
+        </form>
+    </div>
+</body>
+
+</html>
